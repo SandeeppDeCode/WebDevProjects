@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            background-color: lightskyblue;
+            padding: 1rem;
+            min-width: 800px;
+            /* Width means fixed. We are stuck at 800px*/
+        }
+        main p{
+            margin: 1rem auto;
+            background-color: white;
+            padding: 1rem;
+        }
+        main p:nth-child(1){
+            min-width: 600px;
+            /* cannot be samllet than 600px */
+        }
+        main p:nth-child(2){
+            max-width: 600px;
+            /* Can't exceed 600px */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>CSS width vs Max-width</h1>
+</header>
+<main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate explicabo quod sunt alias, dolores quibusdam inventore at repellendus earum laboriosam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt suscipit vel libero possimus expedita inventore assumenda explicabo fuga, iusto veniam, perferendis illo maiores praesentium sit, maxime officia cumque ea corporis.</p>
+</main>
+</body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=YjtunZW7jxw&ab_channel=SteveGriffith-Prof3ssorSt3v3 -->
